@@ -18,7 +18,7 @@ class AuthorFactory extends Factory
     {
         return [
             'birth_state' => \fake('en_US')->state(),
-            'date_of_birth' => $this->faker->date('y-m-d'),
+            'date_of_birth' => $this->faker->date('Y-m-d'),
             'name' => $this->faker->name(),
         ];
     }
