@@ -17,7 +17,9 @@ class AuthorFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'birth_state' => \fake('en_US')->state(),
+            'date_of_birth' => $this->faker->date('y-m-d'),
+            'name' => $this->faker->name(),
         ];
     }
 }
