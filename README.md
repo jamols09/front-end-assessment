@@ -1,4 +1,3 @@
-
 ## Installation
 
 - clone project git@github.com:jamols09/front-end-assessment.git

@@ -2,6 +2,8 @@
 
 namespace Database\Factories;
 
+use App\Models\Author;
+use App\Models\Book;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -25,4 +27,13 @@ class BookFactory extends Factory
             'is_best_seller' => $this->faker->boolean()
         ];
     }
+
+    // public function addAuthor(int $count = null): self
+    // {
+    //     $count = $count ?? rand(1, 5);
+
+    //     return $this->afterCreating(
+    //         fn (Book $post) => Author::factory()->count($count)->for($post)->create()
+    //     );
+    // }
 }
