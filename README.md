@@ -1,11 +1,10 @@
+## Installation
 
-## Installation steps
-
-- clone the project from git@github.com:jamols09/front-end-assessment.git
-- composer install
-- php artisan key:generate
-- configure .env file
-- php artisan migrate
+- clone project git@github.com:jamols09/front-end-assessment.git
+- composer dump-autoload -o / composer install
 - npm install
-- npm run build or npm run dev
-- php artisan serve
+- npm run build / npm run dev
+- go to migrations folder
+    - leave one create_sessions_table
+- php artisan migrate:fresh
+- php artisan vendor:publish --tag=jetstream-views
